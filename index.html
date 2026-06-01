@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saraswathi Enterprises — Premium Catering</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner container">
+      <a href="#home" class="logo">
+        <span class="logo-icon"><i class="fas fa-leaf"></i></span>
+        <div class="logo-text">
+          <span class="logo-main">Saraswathi</span>
+          <span class="logo-sub">Enterprises</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-gold nav-cta">Book Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO — FULLSCREEN SLIDER + LEFT TEXT -->
+  <section class="hs" id="home">
+
+    <!-- Swiper: full-screen background -->
+    <div class="swiper hs-swiper" id="hsSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/hero1-veg.png"       alt="Veg Catering" /></div>
+        <div class="swiper-slide"><img src="images/hero2-nonveg.png"    alt="Non-Veg Catering" /></div>
+        <div class="swiper-slide"><img src="images/hero3-icecreams.png" alt="Ice Creams" /></div>
+        <div class="swiper-slide"><img src="images/hero4-drinks.png"    alt="Drinks" /></div>
+        <div class="swiper-slide"><img src="images/hero5-sweets.png"    alt="Sweets" /></div>
+      </div>
+    </div>
+
+    <!-- Dark gradient over left side for text readability -->
+    <div class="hs-overlay"></div>
+
+    <!-- Sparkles -->
+    <div class="hs-sparkles" id="hsSparkles"></div>
+
+    <!-- TEXT — left side, absolutely positioned -->
+    <div class="hs-text">
+
+      <!-- Badge -->
+      <div class="hs-badge" id="hsBadge">
+        <span class="hs-badge-dot"></span>
+        <span id="hsBadgeText">100% Vegetarian</span>
+      </div>
+
+      <!-- Title -->
+      <h1 class="hs-title" id="hsTitle">Authentic Veg Catering</h1>
+
+      <!-- Subtitle -->
+      <p class="hs-sub" id="hsSub">Traditional vegetarian dishes prepared with fresh ingredients and unforgettable flavors.</p>
+
+      <!-- CTA -->
+      <div class="hs-cta" id="hsCta">
+        <a href="#menu" class="btn btn-gold" id="hsCtaBtn">Explore Menu</a>
+        <a href="#contact" class="btn btn-outline-white">Book Event</a>
+      </div>
+
+      <!-- hidden controls (JS still uses these) -->
+      <div style="display:none">
+        <button id="hsPrev"></button>
+        <div id="hsDots">
+          <button class="hs-dot active" data-i="0"></button>
+          <button class="hs-dot" data-i="1"></button>
+          <button class="hs-dot" data-i="2"></button>
+          <button class="hs-dot" data-i="3"></button>
+          <button class="hs-dot" data-i="4"></button>
+        </div>
+        <button id="hsNext"></button>
+        <div><div id="hsBar"></div></div>
+      </div>
+
+    </div>
+
+    <!-- Stats bar bottom -->
+    <div class="hs-stats">
+      <div class="hs-stat">
+        <strong><span class="hs-count" data-target="5000">0</span>+</strong>
+        <span>Events Catered</span>
+      </div>
+      <div class="hs-stat-div"></div>
+      <div class="hs-stat">
+        <strong><span class="hs-count" data-target="50">0</span>K+</strong>
+        <span>Happy Guests</span>
+      </div>
+      <div class="hs-stat-div"></div>
+      <div class="hs-stat">
+        <strong><span class="hs-count" data-target="18">0</span>+</strong>
+        <span>Years Experience</span>
+      </div>
+      <div class="hs-stat-div"></div>
+      <div class="hs-stat">
+        <strong>24/7</strong>
+        <span>Support</span>
+      </div>
+    </div>
+
+    <!-- Slide counter -->
+    <div class="hs-counter">
+      <span id="hsCurrent">01</span><span class="hs-counter-sep">/</span><span>05</span>
+    </div>
+
+  </section>
+
+  <!-- MARQUEE STRIP -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Weddings</span><span class="dot">✦</span>
+      <span>Corporate Events</span><span class="dot">✦</span>
+      <span>Birthday Parties</span><span class="dot">✦</span>
+      <span>Baby Showers</span><span class="dot">✦</span>
+      <span>Engagements</span><span class="dot">✦</span>
+      <span>Temple Festivals</span><span class="dot">✦</span>
+      <span>Receptions</span><span class="dot">✦</span>
+      <span>Anniversaries</span><span class="dot">✦</span>
+      <span>Weddings</span><span class="dot">✦</span>
+      <span>Corporate Events</span><span class="dot">✦</span>
+      <span>Birthday Parties</span><span class="dot">✦</span>
+      <span>Baby Showers</span><span class="dot">✦</span>
+      <span>Engagements</span><span class="dot">✦</span>
+      <span>Temple Festivals</span><span class="dot">✦</span>
+      <span>Receptions</span><span class="dot">✦</span>
+      <span>Anniversaries</span><span class="dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <div class="about-img-frame">
+          <div class="about-img about-img-1">
+            <img src="https://images.unsplash.com/photo-1555244162-803834f70033?w=600&q=80" alt="Chef preparing food" />
+          </div>
+          <div class="about-img about-img-2">
+            <img src="https://images.unsplash.com/photo-1567521464027-f127ff144326?w=400&q=80" alt="Elegant table setup" />
+          </div>
+          <div class="about-badge">
+            <i class="fas fa-award"></i>
+            <span>Award Winning<br>Catering</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="section-eyebrow">Our Story</p>
+        <h2 class="section-title">A Legacy of Taste &amp; Tradition</h2>
+        <p class="about-desc">Founded in 2005 by the Saraswathi family, we began as a humble home kitchen serving neighbourhood celebrations. Today, we are a full-scale premium catering enterprise trusted by thousands across Tamil Nadu.</p>
+        <p class="about-desc">Our philosophy is simple — every plate tells a story. We blend authentic South Indian recipes passed down through generations with contemporary culinary techniques to deliver experiences that linger long after the last bite.</p>
+        <div class="about-pillars">
+          <div class="pillar">
+            <div class="pillar-icon"><i class="fas fa-seedling"></i></div>
+            <div><strong>Farm Fresh</strong><p>Only the freshest, locally sourced ingredients make it to your plate.</p></div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon"><i class="fas fa-utensils"></i></div>
+            <div><strong>Master Chefs</strong><p>A team of 30+ experienced chefs with decades of expertise.</p></div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon"><i class="fas fa-shield-halved"></i></div>
+            <div><strong>FSSAI Certified</strong><p>Fully licensed and compliant with the highest hygiene standards.</p></div>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-gold">Work With Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">What We Offer</p>
+        <h2 class="section-title">Our Premium Services</h2>
+        <p class="section-sub">From intimate family gatherings to grand celebrations — we do it all with elegance.</p>
+      </div>
+
+      <!-- Row 1: large left + two stacked right -->
+      <div class="svc-bento">
+        <div class="svc-tile svc-large">
+          <img src="images/Wedding Catering.jpg" alt="Wedding Catering" />
+          <div class="svc-tile-overlay">
+            <div class="svc-tile-text">
+              <h3>Wedding Catering</h3>
+              <p>Lavish spreads for your most special day — traditional Sadhya, multi-cuisine buffets &amp; live counters, all crafted to your vision.</p>
+              <a href="#contact" class="svc-tile-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <span class="svc-tile-badge">Most Popular</span>
+        </div>
+
+        <div class="svc-tile-stack">
+          <div class="svc-tile svc-medium">
+            <img src="images/corporate catering.jpg" alt="Corporate Events" />
+            <div class="svc-tile-overlay">
+              <div class="svc-tile-text">
+                <h3>Corporate Events</h3>
+                <p>Boardroom lunches, product launches &amp; team parties — professional catering that impresses every client.</p>
+                <a href="#contact" class="svc-tile-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="svc-tile svc-medium">
+            <img src="images/birthday.jpg" alt="Birthday & Parties" />
+            <div class="svc-tile-overlay">
+              <div class="svc-tile-text">
+                <h3>Birthday &amp; Parties</h3>
+                <p>Themed setups, live counters &amp; special dessert stations — every birthday made truly unforgettable.</p>
+                <a href="#contact" class="svc-tile-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2: three equal cards -->
+      <div class="svc-row3">
+        <div class="svc-tile svc-third">
+          <img src="images/temple and religious catering.jpg" alt="Temple & Religious" />
+          <div class="svc-tile-overlay">
+            <div class="svc-tile-text">
+              <h3>Temple &amp; Religious</h3>
+              <p>Pure vegetarian prasadam, annadanam &amp; festival catering done with devotion and the highest cleanliness.</p>
+              <a href="#contact" class="svc-tile-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="svc-tile svc-third">
+          <img src="images/engagement and reception.avif" alt="Engagement & Reception" />
+          <div class="svc-tile-overlay">
+            <div class="svc-tile-text">
+              <h3>Engagement &amp; Reception</h3>
+              <p>Elegant reception dinners and engagement celebrations with menus that perfectly match the joyous occasion.</p>
+              <a href="#contact" class="svc-tile-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="svc-tile svc-third">
+          <img src="images/home delivery.png" alt="Home Delivery Catering" />
+          <div class="svc-tile-overlay">
+            <div class="svc-tile-text">
+              <h3>Home Delivery</h3>
+              <p>Premium catered food delivered hot &amp; fresh to your doorstep — perfect for smaller gatherings and house functions.</p>
+              <a href="#contact" class="svc-tile-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu-section section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Culinary Highlights</p>
+        <h2 class="section-title">A Taste of Our Menu</h2>
+        <p class="section-sub">Authentic flavours crafted with love — a curated selection from our full menu.</p>
+      </div>
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-tab="veg">Vegetarian</button>
+        <button class="tab-btn" data-tab="nonveg">Non-Vegetarian</button>
+        <button class="tab-btn" data-tab="sweets">Sweets & Desserts</button>
+        <button class="tab-btn" data-tab="drinks">Drinks & Juices</button>
+      </div>
+      <div class="menu-grid" id="menuGrid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="whyus section bg-dark" id="whyus">
+    <div class="container">
+      <div class="section-header light">
+        <p class="section-eyebrow gold">Why Choose Us</p>
+        <h2 class="section-title">The Saraswathi Difference</h2>
+      </div>
+      <div class="whyus-grid">
+        <div class="why-card">
+          <div class="why-num">01</div>
+          <h3>Personalised Menus</h3>
+          <p>We sit with you to craft a menu that reflects your taste, culture, and budget — no generic packages.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">02</div>
+          <h3>On-Time Guarantee</h3>
+          <p>We respect your schedule. Our logistics team ensures every dish is ready and served on time, every time.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">03</div>
+          <h3>End-to-End Service</h3>
+          <p>From planning and setup to serving and clean-up — we handle every detail so you can enjoy the moment.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">04</div>
+          <h3>Transparent Pricing</h3>
+          <p>No hidden charges. We provide clear, itemised quotes so you always know exactly what you're paying for.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials section bg-cream" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Testimonials</p>
+        <h2 class="section-title">Words From Our Guests</h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p>"The wedding feast was absolutely outstanding. Every guest complimented the food. Saraswathi Enterprises exceeded every expectation we had. Truly world-class!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">P</div>
+            <div><strong>Priya Suresh</strong><span>Bride, Chennai</span></div>
+          </div>
+        </div>
+        <div class="testi-card featured">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p>"We've used Saraswathi Enterprises for our company's annual dinner three years in a row. Professional, punctual, and absolutely delicious. Our employees love it!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">R</div>
+            <div><strong>Rajesh Mohan</strong><span>HR Head, TechCorp India</span></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p>"From the first call to the last dish — the experience was flawless. The Sadhya they served for our reception was the best I've ever tasted. Highly recommended!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">A</div>
+            <div><strong>Anuradha Krishnan</strong><span>Mother of the Bride, Coimbatore</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Our Work</p>
+        <h2 class="section-title">Gallery of Excellence</h2>
+        <p class="section-sub">A glimpse into the beautiful events and exquisite food we've been privileged to serve.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item tall"><img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=600&q=80" alt="Banquet Setup" /><div class="gallery-overlay"><span>Grand Banquet</span></div></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&q=80" alt="Fine Dining" /><div class="gallery-overlay"><span>Fine Dining Setup</span></div></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80" alt="Dessert Station" /><div class="gallery-overlay"><span>Dessert Counter</span></div></div>
+        <div class="gallery-item wide"><img src="https://images.unsplash.com/photo-1529543544282-ea669407fca3?w=700&q=80" alt="Wedding Spread" /><div class="gallery-overlay"><span>Wedding Sadhya</span></div></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80" alt="Plated Dish" /><div class="gallery-overlay"><span>Chef's Special</span></div></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=400&q=80" alt="Vegetarian Spread" /><div class="gallery-overlay"><span>Vegetarian Feast</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section bg-cream" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <p class="section-eyebrow">Get In Touch</p>
+        <h2 class="section-title">Let's Plan Your<br>Perfect Event</h2>
+        <p class="contact-desc">Ready to make your event extraordinary? Reach out to us — we'll get back within 24 hours with a personalised quote.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <strong>Phone / WhatsApp</strong>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:info@saraswathienterprises.com">info@saraswathienterprises.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
+            <div>
+              <strong>Address</strong>
+              <span>42, Gandhi Nagar Main Road,<br>Coimbatore — 641 001, Tamil Nadu</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <strong>Working Hours</strong>
+              <span>Mon – Sun: 8:00 AM – 9:00 PM</span>
+            </div>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="contact-form-wrap">
+        <form class="contact-form" id="contactForm">
+          <h3>Send Us a Message</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="Eg. Priya Ramesh" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="+91 XXXXX XXXXX" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="you@example.com" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="eventType">Event Type</label>
+              <select id="eventType" required>
+                <option value="">Select event...</option>
+                <option>Wedding</option>
+                <option>Corporate Event</option>
+                <option>Birthday Party</option>
+                <option>Engagement</option>
+                <option>Reception</option>
+                <option>Religious / Temple</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="guests">No. of Guests</label>
+              <input type="number" id="guests" placeholder="Eg. 200" min="10" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="date">Event Date</label>
+            <input type="date" id="date" />
+          </div>
+          <div class="form-group">
+            <label for="message">Additional Details</label>
+            <textarea id="message" rows="4" placeholder="Tell us about your event, preferences, or any special requirements..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold full-width">Send Enquiry <i class="fas fa-paper-plane"></i></button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-circle-check"></i> Thank you! We'll contact you within 24 hours.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <span class="logo-icon"><i class="fas fa-leaf"></i></span>
+          <div class="logo-text">
+            <span class="logo-main">Saraswathi</span>
+            <span class="logo-sub">Enterprises</span>
+          </div>
+        </a>
+        <p>Premium catering services crafted with passion, tradition, and an unwavering commitment to excellence.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-services">
+        <h4>Services</h4>
+        <ul>
+          <li>Wedding Catering</li>
+          <li>Corporate Events</li>
+          <li>Birthday Parties</li>
+          <li>Temple & Religious</li>
+          <li>Engagement & Reception</li>
+          <li>Home Delivery</li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+        <p><i class="fas fa-envelope"></i> info@saraswathienterprises.com</p>
+        <p><i class="fas fa-location-dot"></i> 42, Gandhi Nagar, Coimbatore</p>
+        <div class="social-links mt">
+          <a href="#" class="social-btn sm"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-btn sm"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn sm"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Saraswathi Enterprises. All Rights Reserved. | Crafted with <i class="fas fa-heart"></i> in Tamil Nadu</p>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
