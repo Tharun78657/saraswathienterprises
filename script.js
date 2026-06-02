@@ -9,23 +9,19 @@ window.addEventListener('scroll', () => {
   const DURATION = 4000;
 
   const slides = [
-    { badge: '100% Vegetarian',   title: 'Authentic Veg Catering',         sub: 'Traditional vegetarian dishes prepared with fresh ingredients and unforgettable flavors.',      cta: 'Explore Menu' },
-    { badge: 'Premium Non-Veg',   title: 'Rich Non-Veg Delicacies',         sub: 'Chicken, Mutton and Signature Specialties crafted for every celebration.',                     cta: 'View Specials' },
-    { badge: 'Frozen Delights',   title: 'Premium Ice Cream Collection',    sub: 'Creamy desserts and refreshing treats loved by guests of all ages.',                           cta: 'See Desserts' },
-    { badge: 'Refreshing Drinks', title: 'Cool Drinks & Mocktails',         sub: 'Refreshing beverages perfectly paired with every occasion.',                                   cta: 'View Beverages' },
-    { badge: 'Sweet Memories',    title: 'Traditional Indian Sweets',       sub: 'Delicious handcrafted sweets made with purity, tradition and taste.',                          cta: 'See Sweets' },
+    { title: 'Veg' },
+    { title: 'Non-Veg' },
+    { title: 'Ice Creams' },
+    { title: 'Sweets' },
+    { title: 'Drinks' },
   ];
 
   let current = 0;
   let autoTimer = null;
 
   // elements
-  const badgeText = document.getElementById('hsBadgeText');
-  const titleEl   = document.getElementById('hsTitle');
-  const subEl     = document.getElementById('hsSub');
-  const ctaBtn    = document.getElementById('hsCtaBtn');
-  const ctaWrap   = document.getElementById('hsCta');
-  const barEl     = document.getElementById('hsBar');
+  const titleEl = document.getElementById('hsTitle');
+  const barEl   = document.getElementById('hsBar');
   const dots      = document.querySelectorAll('.hs-dot');
   const counterEl = document.getElementById('hsCurrent');
 
@@ -78,29 +74,8 @@ window.addEventListener('scroll', () => {
 
   function updateText(idx) {
     const d = slides[idx];
-    // badge
-    badgeText.style.opacity = '0';
-    setTimeout(() => {
-      badgeText.textContent = d.badge;
-      badgeText.style.transition = 'opacity 0.4s ease';
-      badgeText.style.opacity = '1';
-    }, 150);
-
-    // title chars
     splitChars(titleEl, d.title);
     animateChars(titleEl);
-
-    // subtitle
-    subEl.classList.remove('visible');
-    setTimeout(() => {
-      subEl.textContent = d.sub;
-      subEl.classList.add('visible');
-    }, 500);
-
-    // cta
-    ctaWrap.classList.remove('visible');
-    ctaBtn.textContent = d.cta;
-    setTimeout(() => ctaWrap.classList.add('visible'), 800);
   }
 
   function updateDots(idx) {
@@ -185,8 +160,6 @@ window.addEventListener('scroll', () => {
   // ── init ──
   splitChars(titleEl, slides[0].title);
   animateChars(titleEl);
-  setTimeout(() => subEl.classList.add('visible'), 500);
-  setTimeout(() => ctaWrap.classList.add('visible'), 800);
   restartProgress();
   startAuto();
 })();
@@ -196,9 +169,13 @@ const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
 hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('open');
+  hamburger.classList.toggle('open');
 });
 navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => navLinks.classList.remove('open'));
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    hamburger.classList.remove('open');
+  });
 });
 
 // ===== MENU DATA =====
