@@ -299,7 +299,7 @@ function addFadeUpToElements() {
   const selectors = [
     '.service-card', '.why-card', '.testi-card',
     '.gallery-item', '.about-text', '.about-visual',
-    '.contact-info', '.contact-form-wrap', '.pillar'
+    '.contact-info', '.pillar'
   ];
   selectors.forEach(sel => {
     document.querySelectorAll(sel).forEach(el => {
