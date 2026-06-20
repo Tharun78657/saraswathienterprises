@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "tharun-fresh-chicken",
+      "runtimeExecutable": "C:\\tharun\\saraswathienterprises\\start-chicken-app.bat",
+      "runtimeArgs": [],
+      "port": 5173
+    }
+  ]
+}

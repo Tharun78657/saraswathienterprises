@@ -21,8 +21,8 @@ window.addEventListener('scroll', () => {
 
   // elements
   const titleEl = document.getElementById('hsTitle');
-  const barEl   = document.getElementById('hsBar');
-  const dots      = document.querySelectorAll('.hs-dot');
+  const barEl = document.getElementById('hsBar');
+  const dots = document.querySelectorAll('.hs-dot');
   const counterEl = document.getElementById('hsCurrent');
 
   // ── Swiper init ──
@@ -182,75 +182,75 @@ navLinks.querySelectorAll('a').forEach(link => {
 const menuData = {
   veg: [
     // Vegetable Biryani – colourful veg biryani in a pot
-    { name: 'Vegetable Biryani', desc: 'Fragrant basmati rice with fresh vegetables & aromatic spices', img: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&q=80', tag: 'veg', tagLabel: 'Veg' },
+    { name: 'Vegetable Biryani', desc: 'Fragrant basmati rice with fresh vegetables & aromatic spices', img: 'images/veg biryani.jpg', tag: 'veg', tagLabel: 'Veg' },
     // Paneer Butter Masala – bright orange paneer gravy
-    { name: 'Paneer Butter Masala', desc: 'Soft paneer in rich, creamy tomato-based gravy', img: 'https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?w=400&q=80', tag: 'veg', tagLabel: 'Veg' },
+    { name: 'Paneer Butter Masala', desc: 'Soft paneer in rich, creamy tomato-based gravy', img: 'images/Paneer Butter Masala.jpg', tag: 'veg', tagLabel: 'Veg' },
     // Dal Tadka – yellow lentil dal in bowl
-    { name: 'Dal Tadka', desc: 'Slow-cooked lentils tempered with cumin, garlic & ghee', img: 'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&q=80', tag: 'veg', tagLabel: 'Veg' },
+    { name: 'Dal Tadka', desc: 'Slow-cooked lentils tempered with cumin, garlic & ghee', img: 'images/Dal Tadka.jpg', tag: 'veg', tagLabel: 'Veg' },
     // Sambar Rice – South Indian thali / sambar
-    { name: 'Sambar Rice', desc: 'Traditional Tamil Nadu sambar with hot rice and papad', img: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=400&q=80', tag: 'veg', tagLabel: 'Veg' },
+    { name: 'Sambar Rice', desc: 'Traditional Tamil Nadu sambar with hot rice and papad', img: 'images/Sambar Rice.jpg', tag: 'veg', tagLabel: 'Veg' },
     // Curd Rice – white curd rice with tempering
-    { name: 'Curd Rice', desc: 'Cool, comforting curd rice tempered with mustard & curry leaves', img: 'https://images.unsplash.com/photo-1630383249896-483b1fbf5fc?w=400&q=80', tag: 'veg', tagLabel: 'Veg' },
+    { name: 'Curd Rice', desc: 'Cool, comforting curd rice tempered with mustard & curry leaves', img: 'images/Curd Rice.jpg', tag: 'veg', tagLabel: 'Veg' },
     // Puri Masala – puffy deep-fried pooris
-    { name: 'Puri Masala', desc: 'Fluffy deep-fried pooris with spicy potato masala', img: 'https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&q=80', tag: 'veg', tagLabel: 'Veg' },
+    { name: 'Puri Masala', desc: 'Fluffy deep-fried pooris with spicy potato masala', img: 'images/Puri Masala.jpg', tag: 'veg', tagLabel: 'Veg' },
     // Idli Sambar – white idlis on plate
-    { name: 'Idli Sambar', desc: 'Steamed soft idlis with piping hot sambar and chutneys', img: 'https://images.unsplash.com/photo-1610192244261-3f33de3f55e4?w=400&q=80', tag: 'veg', tagLabel: 'Veg' },
+    { name: 'Idli Sambar', desc: 'Steamed soft idlis with piping hot sambar and chutneys', img: 'images/Idli Sambar.jpg', tag: 'veg', tagLabel: 'Veg' },
     // Chapati with Kurma – layered rotis / chapati
-    { name: 'Chapati with Kurma', desc: 'Soft whole wheat chapatis with mixed vegetable kurma', img: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&q=80', tag: 'veg', tagLabel: 'Veg' },
+    { name: 'Chapati with Kurma', desc: 'Soft whole wheat chapatis with mixed vegetable kurma', img: 'images/Chapati with Kurma.jpg', tag: 'veg', tagLabel: 'Veg' },
   ],
   nonveg: [
     // Chicken Biryani – chicken biryani with raita
-    { name: 'Chicken Biryani', desc: 'Dum-cooked biryani with tender chicken and fragrant saffron rice', img: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=400&q=80', tag: 'nonveg', tagLabel: 'Non-Veg' },
+    { name: 'Chicken Biryani', desc: 'Dum-cooked biryani with tender chicken and fragrant saffron rice', img: 'images/Chicken Biryani.jpg', tag: 'nonveg', tagLabel: 'Non-Veg' },
     // Mutton Curry – dark rich mutton gravy
-    { name: 'Mutton Curry', desc: 'Slow-cooked tender mutton in a rich spice-laden gravy', img: 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400&q=80', tag: 'nonveg', tagLabel: 'Non-Veg' },
+    { name: 'Mutton Curry', desc: 'Slow-cooked tender mutton in a rich spice-laden gravy', img: 'images/Mutton Curry.jpg', tag: 'nonveg', tagLabel: 'Non-Veg' },
     // Tandoori Chicken – charred red tandoori chicken
-    { name: 'Tandoori Chicken', desc: 'Marinated whole chicken slow-roasted in traditional clay oven', img: 'https://images.unsplash.com/photo-1599487488170-d11ec9c081cc?w=400&q=80', tag: 'nonveg', tagLabel: 'Non-Veg' },
+    { name: 'Tandoori Chicken', desc: 'Marinated whole chicken slow-roasted in traditional clay oven', img: 'images/Tandoori Chicken.jpg', tag: 'nonveg', tagLabel: 'Non-Veg' },
     // Fish Curry – South Indian fish curry
-    { name: 'Fish Curry', desc: 'Coastal-style fish curry cooked with tamarind and coconut milk', img: 'https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=400&q=80', tag: 'nonveg', tagLabel: 'Non-Veg' },
+    { name: 'Fish Curry', desc: 'Coastal-style fish curry cooked with tamarind and coconut milk', img: 'images/Fish Curry.jpg', tag: 'nonveg', tagLabel: 'Non-Veg' },
     // Prawn Masala – prawns in masala
-    { name: 'Prawn Masala', desc: 'Juicy prawns in a bold, spicy masala — a crowd favourite', img: 'https://images.unsplash.com/photo-1559847844-5315695dadae?w=400&q=80', tag: 'nonveg', tagLabel: 'Non-Veg' },
+    { name: 'Prawn Masala', desc: 'Juicy prawns in a bold, spicy masala — a crowd favourite', img: 'images/Prawn Masala.jpg', tag: 'nonveg', tagLabel: 'Non-Veg' },
     // Chicken 65 – fried crispy chicken pieces
-    { name: 'Chicken 65', desc: 'Crispy deep-fried chicken with chillies — the ultimate starter', img: 'https://images.unsplash.com/photo-1626082927389-6cd097cee6a5?w=400&q=80', tag: 'nonveg', tagLabel: 'Non-Veg' },
+    { name: 'Chicken 65', desc: 'Crispy deep-fried chicken with chillies — the ultimate starter', img: 'images/Chicken 65.jpg', tag: 'nonveg', tagLabel: 'Non-Veg' },
     // Egg Masala – boiled eggs in thick gravy
-    { name: 'Egg Masala', desc: 'Hard-boiled eggs in a spiced onion-tomato gravy', img: 'https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=400&q=80', tag: 'nonveg', tagLabel: 'Non-Veg' },
+    { name: 'Egg Masala', desc: 'Hard-boiled eggs in a spiced onion-tomato gravy', img: 'images/Egg Masala.jpg', tag: 'nonveg', tagLabel: 'Non-Veg' },
     // Mutton Biryani – dum biryani topped with mutton
-    { name: 'Mutton Biryani', desc: 'Premium dum biryani with succulent mutton and whole spices', img: 'https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?w=400&q=80', tag: 'nonveg', tagLabel: 'Non-Veg' },
+    { name: 'Mutton Biryani', desc: 'Premium dum biryani with succulent mutton and whole spices', img: 'images/mutton biryani.jpg', tag: 'nonveg', tagLabel: 'Non-Veg' },
   ],
   sweets: [
     // Gulab Jamun – dark round jamuns in syrup
-    { name: 'Gulab Jamun', desc: 'Soft milk-solid dumplings soaked in rose-cardamom sugar syrup', img: 'https://images.unsplash.com/photo-1605130284535-11dd9eedc58a?w=400&q=80', tag: 'sweet', tagLabel: 'Sweet' },
+    { name: 'Gulab Jamun', desc: 'Soft milk-solid dumplings soaked in rose-cardamom sugar syrup', img: 'images/Gulab Jamun.jpg', tag: 'sweet', tagLabel: 'Sweet' },
     // Payasam / Kheer – creamy rice kheer with saffron
-    { name: 'Payasam', desc: 'Creamy vermicelli kheer with cashews, raisins and saffron', img: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80', tag: 'sweet', tagLabel: 'Sweet' },
+    { name: 'Payasam', desc: 'Creamy vermicelli kheer with cashews, raisins and saffron', img: 'images/Payasam.jpg', tag: 'sweet', tagLabel: 'Sweet' },
     // Halwa – orange-gold wheat halwa
-    { name: 'Halwa', desc: 'Rich wheat halwa garnished with ghee-fried nuts — temple style', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', tag: 'sweet', tagLabel: 'Sweet' },
+    { name: 'Halwa', desc: 'Rich wheat halwa garnished with ghee-fried nuts — temple style', img: 'images/Halwa.jpg', tag: 'sweet', tagLabel: 'Sweet' },
     // Rasgulla – white spongy balls in bowl
-    { name: 'Rasgulla', desc: 'Soft, spongy chena balls in light sugar syrup', img: 'https://images.unsplash.com/photo-1666450569913-7d7d6f6f2b16?w=400&q=80', tag: 'sweet', tagLabel: 'Sweet' },
+    { name: 'Rasgulla', desc: 'Soft, spongy chena balls in light sugar syrup', img: 'images/Rasgulla.jpg', tag: 'sweet', tagLabel: 'Sweet' },
     // Kesari Bath – orange saffron semolina sweet
-    { name: 'Kesari Bath', desc: 'Semolina-based sweet with saffron, ghee and dry fruits', img: 'https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=400&q=80', tag: 'sweet', tagLabel: 'Sweet' },
+    { name: 'Kesari Bath', desc: 'Semolina-based sweet with saffron, ghee and dry fruits', img: 'images/Kesari Bath.jpg', tag: 'sweet', tagLabel: 'Sweet' },
     // Jangiri / Imarti – spiral deep-fried sweet
-    { name: 'Jangiri', desc: 'Crispy spiral-shaped urad dal sweets dipped in sugar syrup', img: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&q=80', tag: 'sweet', tagLabel: 'Sweet' },
+    { name: 'Jangiri', desc: 'Crispy spiral-shaped urad dal sweets dipped in sugar syrup', img: 'images/Jangiri.jpg', tag: 'sweet', tagLabel: 'Sweet' },
     // Ice Cream – scoops in cone/cup
-    { name: 'Ice Cream Bar', desc: 'Premium live ice cream station with 12+ flavours and toppings', img: 'https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=400&q=80', tag: 'sweet', tagLabel: 'Sweet' },
+    { name: 'Ice Cream Bar', desc: 'Premium live ice cream station with 12+ flavours and toppings', img: 'images/Ice Cream Bar.jpg', tag: 'sweet', tagLabel: 'Sweet' },
     // Mysore Pak – golden gram flour sweet squares
-    { name: 'Mysore Pak', desc: 'Melt-in-mouth gram flour fudge made with pure ghee', img: 'https://images.unsplash.com/photo-1571119829751-dd8e2477d32b?w=400&q=80', tag: 'sweet', tagLabel: 'Sweet' },
+    { name: 'Mysore Pak', desc: 'Melt-in-mouth gram flour fudge made with pure ghee', img: 'images/Mysore Pak.jpg', tag: 'sweet', tagLabel: 'Sweet' },
   ],
   drinks: [
     // Mango Lassi – thick yellow mango yoghurt drink
-    { name: 'Fresh Mango Lassi', desc: 'Thick, chilled mango yoghurt drink — summer favourite', img: 'https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=400&q=80', tag: 'drink', tagLabel: 'Drink' },
+    { name: 'Fresh Mango Lassi', desc: 'Thick, chilled mango yoghurt drink — summer favourite', img: 'images/Fresh Mango Lassi.jpg', tag: 'drink', tagLabel: 'Drink' },
     // Panakam / lemon jaggery drink – yellowish drink in glass
-    { name: 'Panakam', desc: 'Traditional jaggery-lemon drink with pepper and cardamom', img: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=400&q=80', tag: 'drink', tagLabel: 'Drink' },
+    { name: 'Panakam', desc: 'Traditional jaggery-lemon drink with pepper and cardamom', img: 'images/Panakam.jpg', tag: 'drink', tagLabel: 'Drink' },
     // Filter Kaapi – frothy South Indian coffee in tumbler-davara
-    { name: 'Filter Kaapi', desc: 'Authentic South Indian filter coffee with frothy top', img: 'https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=400&q=80', tag: 'drink', tagLabel: 'Drink' },
+    // { name: 'Filter Kaapi', desc: 'Authentic South Indian filter coffee with frothy top', img: 'https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=400&q=80', tag: 'drink', tagLabel: 'Drink' },
     // Tender Coconut Water – whole tender coconut with straw
-    { name: 'Tender Coconut Water', desc: 'Fresh, chilled tender coconut served straight from the shell', img: 'https://images.unsplash.com/photo-1580870069867-74c57ee1bb07?w=400&q=80', tag: 'drink', tagLabel: 'Drink' },
+    { name: 'Tender Coconut Water', desc: 'Fresh, chilled tender coconut served straight from the shell', img: 'images/Tender Coconut Water.jpg', tag: 'drink', tagLabel: 'Drink' },
     // Rose Milk – pink drink in glass
-    { name: 'Rose Milk', desc: 'Chilled full-cream milk with rose syrup and basil seeds', img: 'https://images.unsplash.com/photo-1546173159-315724a31696?w=400&q=80', tag: 'drink', tagLabel: 'Drink' },
+    { name: 'Rose Milk', desc: 'Chilled full-cream milk with rose syrup and basil seeds', img: 'images/Rose Milk.jpg', tag: 'drink', tagLabel: 'Drink' },
     // Fresh Lime Soda – lime soda with ice
-    { name: 'Fresh Lime Soda', desc: 'Refreshing lime soda — sweet, salted or mixed to order', img: 'https://images.unsplash.com/photo-1543253687-c931c8e01820?w=400&q=80', tag: 'drink', tagLabel: 'Drink' },
+    { name: 'Fresh Lime Soda', desc: 'Refreshing lime soda — sweet, salted or mixed to order', img: 'images/Fresh Lime Soda.jpg', tag: 'drink', tagLabel: 'Drink' },
     // Watermelon Juice – bright red watermelon juice
-    { name: 'Watermelon Juice', desc: 'Cold-pressed fresh watermelon juice with a hint of mint', img: 'https://images.unsplash.com/photo-1548013146-72479768bada?w=400&q=80', tag: 'drink', tagLabel: 'Drink' },
+    { name: 'Watermelon Juice', desc: 'Cold-pressed fresh watermelon juice with a hint of mint', img: 'images/Watermelon Juice.jpg', tag: 'drink', tagLabel: 'Drink' },
     // Buttermilk / Mor – white spiced buttermilk
-    { name: 'Buttermilk (Mor)', desc: 'Spiced traditional Tamil buttermilk — light and digestive', img: 'https://images.unsplash.com/photo-1571167366136-b57e40d75d30?w=400&q=80', tag: 'drink', tagLabel: 'Drink' },
+    { name: 'Buttermilk (Mor)', desc: 'Spiced traditional Tamil buttermilk — light and digestive', img: 'images/Buttermilk (Mor).jpg', tag: 'drink', tagLabel: 'Drink' },
   ]
 };
 
@@ -311,18 +311,34 @@ function addFadeUpToElements() {
 addFadeUpToElements();
 
 // ===== CONTACT FORM =====
-document.getElementById('contactForm').addEventListener('submit', function(e) {
+document.getElementById('contactForm').addEventListener('submit', function (e) {
   e.preventDefault();
-  const btn = this.querySelector('button[type="submit"]');
-  btn.textContent = 'Sending...';
-  btn.disabled = true;
-  setTimeout(() => {
-    document.getElementById('formSuccess').classList.add('show');
-    btn.innerHTML = 'Send Enquiry <i class="fas fa-paper-plane"></i>';
-    btn.disabled = false;
-    this.reset();
-    setTimeout(() => document.getElementById('formSuccess').classList.remove('show'), 5000);
-  }, 1200);
+  
+  const name = document.getElementById('name').value;
+  const phone = document.getElementById('phone').value;
+  const email = document.getElementById('email').value;
+  const eventType = document.getElementById('eventType').value;
+  const guests = document.getElementById('guests').value;
+  const date = document.getElementById('date').value;
+  const message = document.getElementById('message').value;
+
+  let waText = `Hi Saraswathi Enterprises,\n\nI would like to enquire about your catering services. Here are my details:\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Event Type:* ${eventType}`;
+  
+  if (email) waText += `\n*Email:* ${email}`;
+  if (guests) waText += `\n*Guests:* ${guests}`;
+  if (date) waText += `\n*Date:* ${date}`;
+  if (message) waText += `\n*Details:* ${message}`;
+
+  const encodedText = encodeURIComponent(waText);
+  const waLink = `https://wa.me/918500585906?text=${encodedText}`;
+
+  // Open WhatsApp in a new tab
+  window.open(waLink, '_blank');
+
+  // Show success and reset form
+  document.getElementById('formSuccess').classList.add('show');
+  this.reset();
+  setTimeout(() => document.getElementById('formSuccess').classList.remove('show'), 5000);
 });
 
 // ===== SMOOTH ACTIVE NAV =====
